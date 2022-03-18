@@ -1,0 +1,114 @@
+ProgramNode {
+  FunctionDeclNode {
+    TypeNameNode: void {
+      NameNode {
+        void
+      }
+    }
+    NameNode {
+      main
+    }
+    ParameterNode {
+      ArrayTypeNameNode: string[] {
+        TypeNameNode: string {
+          NameNode {
+            string
+          }
+        }
+      }
+      NameNode {
+        args
+      }
+    }
+    VarDeclNode {
+      TypeNameNode: int {
+        NameNode {
+          int
+        }
+      }
+      NameNode {
+        i
+      }
+    }
+    VarDeclNode {
+      TypeNameNode: foo {
+        NameNode {
+          foo
+        }
+      }
+      NameNode {
+        f
+      }
+    }
+    BlockNode {
+      ExpressionStatementNode {
+        NewNode: int[] {
+          ArrayTypeNameNode: int[] {
+            TypeNameNode: int {
+              NameNode {
+                int
+              }
+            }
+          }
+        }
+      }
+      ExpressionStatementNode {
+        NewNode: foo[] {
+          ArrayTypeNameNode: foo[] {
+            TypeNameNode: foo {
+              NameNode {
+                foo
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  FunctionDeclNode {
+    TypeNameNode: foo {
+      NameNode {
+        foo
+      }
+    }
+    NameNode {
+      foo
+    }
+    BlockNode {
+      ReturnNode {
+        NewNode: foo {
+          TypeNameNode: foo {
+            NameNode {
+              foo
+            }
+          }
+        }
+      }
+    }
+  }
+  StructDeclNode: foo {
+    NameNode {
+      foo
+    }
+    VarDeclNode {
+      TypeNameNode: float {
+        NameNode {
+          float
+        }
+      }
+      NameNode {
+        f
+      }
+    }
+    VarDeclNode {
+      TypeNameNode: foo {
+        NameNode {
+          foo
+        }
+      }
+      NameNode {
+        g
+      }
+    }
+  }
+}
